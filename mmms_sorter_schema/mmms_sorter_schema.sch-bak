@@ -65,51 +65,51 @@ Scanner
 $Comp
 L Motor:Motor_Servo M2
 U 1 1 6092B85C
-P 5900 2550
-F 0 "M2" H 6232 2615 50  0001 L CNN
-F 1 "Latch Servo" H 6232 2569 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5900 2360 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 5900 2360 50  0001 C CNN
-	1    5900 2550
+P 5700 2550
+F 0 "M2" H 6032 2615 50  0001 L CNN
+F 1 "Latch Servo" H 6032 2569 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5700 2360 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 5700 2360 50  0001 C CNN
+	1    5700 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Motor:Motor_Servo M1
 U 1 1 6092E47B
-P 5800 2100
-F 0 "M1" H 6150 2150 50  0001 L CNN
-F 1 "Director Servo" H 6132 2074 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5800 1910 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 5800 1910 50  0001 C CNN
-	1    5800 2100
+P 5700 2100
+F 0 "M1" H 6050 2150 50  0001 L CNN
+F 1 "Director Servo" H 6032 2074 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5700 1910 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 5700 1910 50  0001 C CNN
+	1    5700 2100
 	1    0    0    -1  
 $EndComp
 Text GLabel 3950 1500 1    50   UnSpc ~ 0
 5V
-Text GLabel 5550 2550 0    50   UnSpc ~ 0
+Text GLabel 5350 2550 0    50   UnSpc ~ 0
 5V
-Text GLabel 5450 2100 0    50   UnSpc ~ 0
+Text GLabel 5350 2100 0    50   UnSpc ~ 0
 5V
 Wire Wire Line
 	4350 2550 5200 2550
 Wire Wire Line
-	5200 2450 5600 2450
+	5200 2450 5400 2450
 Wire Wire Line
 	5200 2550 5200 2450
 Wire Wire Line
-	4350 2450 4900 2450
+	4350 2450 5150 2450
 Wire Wire Line
-	4900 2450 4900 2000
+	5150 2450 5150 2000
 Wire Wire Line
-	4900 2000 5500 2000
+	5150 2000 5400 2000
 Wire Wire Line
-	5450 2100 5500 2100
+	5350 2100 5400 2100
 Wire Wire Line
-	5450 2200 5500 2200
+	5350 2200 5400 2200
 Wire Wire Line
-	5550 2550 5600 2550
+	5350 2550 5400 2550
 Wire Wire Line
-	5550 2650 5600 2650
+	5350 2650 5400 2650
 Wire Wire Line
 	3750 3550 3750 3600
 Wire Wire Line
@@ -123,63 +123,63 @@ Wire Wire Line
 $Comp
 L Regulator_Linear:L7805 U1
 U 1 1 609525EC
-P 5500 1050
-F 0 "U1" H 5500 1292 50  0001 C CNN
-F 1 "L7805" H 5500 1201 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5525 900 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5500 1000 50  0001 C CNN
-	1    5500 1050
+P 1900 1200
+F 0 "U1" H 1900 1442 50  0001 C CNN
+F 1 "L7805" H 1900 1351 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 1925 1050 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1900 1150 50  0001 C CNN
+	1    1900 1200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C2
 U 1 1 609580F1
-P 6000 1350
-F 0 "C2" H 6115 1396 50  0001 L CNN
-F 1 "0,1uF" H 6115 1350 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 6038 1200 50  0001 C CNN
-F 3 "~" H 6000 1350 50  0001 C CNN
-	1    6000 1350
+P 2400 1500
+F 0 "C2" H 2515 1546 50  0001 L CNN
+F 1 "0,1uF" H 2515 1500 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 2438 1350 50  0001 C CNN
+F 3 "~" H 2400 1500 50  0001 C CNN
+	1    2400 1500
 	1    0    0    -1  
 $EndComp
-Connection ~ 5500 1500
+Connection ~ 1900 1650
 Wire Wire Line
-	5800 1050 6000 1050
+	2200 1200 2400 1200
 Wire Wire Line
-	6000 1500 5500 1500
+	2400 1650 1900 1650
 $Comp
 L Device:C C1
 U 1 1 609660FB
-P 4950 1350
-F 0 "C1" H 5065 1396 50  0001 L CNN
-F 1 "0,33uF" H 5065 1350 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 4988 1200 50  0001 C CNN
-F 3 "~" H 4950 1350 50  0001 C CNN
-	1    4950 1350
+P 1350 1500
+F 0 "C1" H 1465 1546 50  0001 L CNN
+F 1 "0,33uF" H 1465 1500 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 1388 1350 50  0001 C CNN
+F 3 "~" H 1350 1500 50  0001 C CNN
+	1    1350 1500
 	1    0    0    -1  
 $EndComp
-Text GLabel 6200 1050 2    50   UnSpc ~ 0
+Text GLabel 2600 1200 2    50   UnSpc ~ 0
 5V
 Wire Wire Line
-	6200 1050 6000 1050
-Connection ~ 6000 1050
-Text GLabel 4850 1050 0    50   UnSpc ~ 0
+	2600 1200 2400 1200
+Connection ~ 2400 1200
+Text GLabel 1250 1200 0    50   UnSpc ~ 0
 External5V
 Wire Wire Line
-	4950 1500 5500 1500
+	1350 1650 1900 1650
 Wire Wire Line
-	4850 1050 4950 1050
-Connection ~ 4950 1050
+	1250 1200 1350 1200
+Connection ~ 1350 1200
 Wire Wire Line
-	4950 1050 5200 1050
+	1350 1200 1600 1200
 Wire Wire Line
-	5500 1350 5500 1500
+	1900 1500 1900 1650
 Wire Wire Line
-	5500 1500 5500 1600
+	1900 1650 1900 1750
 Wire Wire Line
-	6000 1050 6000 1200
+	2400 1200 2400 1350
 Wire Wire Line
-	4950 1050 4950 1200
+	1350 1200 1350 1350
 Wire Wire Line
 	5050 2650 5050 2800
 Wire Wire Line
@@ -214,12 +214,12 @@ $EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 6092908C
-P 5500 1600
-F 0 "#PWR0101" H 5500 1350 50  0001 C CNN
-F 1 "GND" H 5505 1427 50  0000 C CNN
-F 2 "" H 5500 1600 50  0001 C CNN
-F 3 "" H 5500 1600 50  0001 C CNN
-	1    5500 1600
+P 1900 1750
+F 0 "#PWR0101" H 1900 1500 50  0001 C CNN
+F 1 "GND" H 1905 1577 50  0000 C CNN
+F 2 "" H 1900 1750 50  0001 C CNN
+F 3 "" H 1900 1750 50  0001 C CNN
+	1    1900 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -236,23 +236,23 @@ $EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 6092B683
-P 5550 2650
-F 0 "#PWR0103" H 5550 2400 50  0001 C CNN
-F 1 "GND" V 5555 2522 50  0000 R CNN
-F 2 "" H 5550 2650 50  0001 C CNN
-F 3 "" H 5550 2650 50  0001 C CNN
-	1    5550 2650
+P 5350 2650
+F 0 "#PWR0103" H 5350 2400 50  0001 C CNN
+F 1 "GND" V 5355 2522 50  0000 R CNN
+F 2 "" H 5350 2650 50  0001 C CNN
+F 3 "" H 5350 2650 50  0001 C CNN
+	1    5350 2650
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 6092BD9F
-P 5450 2200
-F 0 "#PWR0104" H 5450 1950 50  0001 C CNN
-F 1 "GND" V 5455 2072 50  0000 R CNN
-F 2 "" H 5450 2200 50  0001 C CNN
-F 3 "" H 5450 2200 50  0001 C CNN
-	1    5450 2200
+P 5350 2200
+F 0 "#PWR0104" H 5350 1950 50  0001 C CNN
+F 1 "GND" V 5355 2072 50  0000 R CNN
+F 2 "" H 5350 2200 50  0001 C CNN
+F 3 "" H 5350 2200 50  0001 C CNN
+	1    5350 2200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -284,21 +284,21 @@ Wire Wire Line
 Wire Wire Line
 	5200 3600 5350 3600
 $Comp
-L customs:ULN2003 U3
+L customs:ULN2003 U?
 U 1 1 6091B346
 P 5750 3700
-F 0 "U3" H 6080 3996 50  0001 L CNN
+F 0 "U?" H 6080 3996 50  0001 L CNN
 F 1 "ULN2003" H 6080 3950 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5800 3150 50  0001 L CNN
+F 2 "" H 5800 3150 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 5850 3500 50  0001 C CNN
 	1    5750 3700
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0106
+L power:GND #PWR?
 U 1 1 6091C233
 P 5750 3850
-F 0 "#PWR0106" H 5750 3600 50  0001 C CNN
+F 0 "#PWR?" H 5750 3600 50  0001 C CNN
 F 1 "GND" H 5755 3677 50  0000 C CNN
 F 2 "" H 5750 3850 50  0001 C CNN
 F 3 "" H 5750 3850 50  0001 C CNN
