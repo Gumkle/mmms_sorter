@@ -25,20 +25,22 @@ Servo latch, director;
 
 bool machineStarted = false;
 int color = 0;
-bool mmmsPresent = true;
+bool mmmsPresent = false;
 
 void setup()
 {
   Serial.begin(9600);
-  if (!APDS.begin()) {
+  while (!APDS.begin()) {
     Serial.println("Error initializing APDS-9960 sensor.");
+    delay(1000); 
   }
   dispenserStepper.setSpeed(1000); // pełna prędkość
   pinMode(BUTTON_PIN, INPUT);
   pinMode(SCAN_LED, OUTPUT);
   pinMode(5, OUTPUT);
-  latch.attach(6);
-  director.attach(5);
+  latch.attach(5);
+  director.attach(6);
+  openLatch();
   closeLatch();
   directTo(0);
 }
@@ -80,7 +82,7 @@ void stopMachine() {
 }
 
 void scan() {
-  return;
+  delay(1000);
   Serial.println("Skanowanie...");
   digitalWrite(SCAN_LED, HIGH); 
   
@@ -91,9 +93,9 @@ void scan() {
   APDS.readColor(r, g, b);
 
   // empty chamber values
-  r -= 58+11-45;
-  g -= 84+16-61;
-  b -= 120+22-192+101;
+  r -= 58+11-45-4;
+  g -= 84+16-61-11;
+  b -= 120+22-192+101-11;
   
   int colorSum = r + g + b;
   float redPercentage = (float)r/(float)colorSum*100.0f;
@@ -103,20 +105,20 @@ void scan() {
   Serial.println(g);
   Serial.println(b);
 //  
-//  Serial.println(redPercentage);
-//  Serial.println(greenPercentage);
-//  Serial.println(bluePercentage);
+  Serial.println(redPercentage);
+  Serial.println(greenPercentage);
+  Serial.println(bluePercentage);
   Serial.println(colorSum);
   
   char guess[25] = "Empty";
-  bool mmmsPresent = false;
+  mmmsPresent = false;
   
-  if (colorSum > 50) {
+  if (colorSum > 25) {
     mmmsPresent = true;
-    if (colorSum < 500 && around(redPercentage, 30.0f) && around(greenPercentage, 30.0f) && around(bluePercentage, 38.0f)) {
+    if (colorSum < 500 && around(redPercentage, 40.0f) && around(greenPercentage, 30.0f) && around(bluePercentage, 35.0f)) {
       color = BROWN;
         strcpy(guess, "brown");
-    } else if (around(redPercentage, 50.0f) && around(greenPercentage, 30.0f) && around(bluePercentage, 20.0f)) {
+    } else if (around(redPercentage, 54.0f) && around(greenPercentage, 28.0f) && around(bluePercentage, 20.0f)) {
       color = ORANGE;
         strcpy(guess, "orange");
     } else if (around(redPercentage, 40.0f) && around(greenPercentage, 40.0f) && around(bluePercentage, 20.0f)) {
@@ -142,28 +144,35 @@ void scan() {
   Serial.println(message);
   
   digitalWrite(SCAN_LED, LOW);
+  
+  Serial.println("Confirm (y/n)?");
+  bool confirm = false;
+  
+  do {
+    confirm = readYesNoFromSerial(); 
+  } while (!confirm);
 }
 
 bool around (float a, float b) {
-  return abs(a-b) < 7.5f;
+  return abs(a-b) < 8.5f;
 }
 
 bool isMmmsPresentInChamber() { // porownanie odczytu czytnika koloru do koloru pustej komory? 
 //  Serial.println("Czy MMMs wpadł (y/n)");
 //  return readYesNoFromSerial();
-  return true;
+//  return true;
   return mmmsPresent;
 }
 
 int currentMmmsColor() { // Komora najlepiej czarna bo nie odbija światła aż tak
 //  return random(0,6);
-  Serial.println("Jaki kolor MMMs (int)");
-  while(Serial.available() == 0) {
-    delay(1);
-  }
-  int input = Serial.parseInt();
-  Serial.println(input);
-  return input;   
+//  Serial.println("Jaki kolor MMMs (int)");
+//  while(Serial.available() == 0) {
+//    delay(1);
+//  }
+//  int input = Serial.parseInt();
+//  Serial.println(input);
+//  return input;   
   return color;
 }
 
