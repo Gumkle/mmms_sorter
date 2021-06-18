@@ -1,0 +1,3 @@
+/home/dawidd/projects/studia/mmms_sorter/stm32/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dawidd/projects/studia/mmms_sorter/stm32/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dawidd/projects/studia/mmms_sorter/stm32/cmake-build-debug/CMakeFiles/stm32.elf.dir
