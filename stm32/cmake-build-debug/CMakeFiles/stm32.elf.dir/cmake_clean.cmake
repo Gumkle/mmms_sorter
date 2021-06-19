@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.obj"
+  "CMakeFiles/stm32.elf.dir/Core/Src/config.c.obj"
   "CMakeFiles/stm32.elf.dir/Core/Src/main.c.obj"
   "CMakeFiles/stm32.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
   "CMakeFiles/stm32.elf.dir/Core/Src/stm32f1xx_it.c.obj"
@@ -26,6 +26,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang ASM C CXX)
+foreach(lang ASM C)
   include(CMakeFiles/stm32.elf.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

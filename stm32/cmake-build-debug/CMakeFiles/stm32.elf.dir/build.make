@@ -66,18 +66,18 @@ include CMakeFiles/stm32.elf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/stm32.elf.dir/flags.make
 
-CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.obj: CMakeFiles/stm32.elf.dir/flags.make
-CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.obj: ../Core/Src/config.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dawidd/projects/studia/mmms_sorter/stm32/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.obj"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.obj -c /home/dawidd/projects/studia/mmms_sorter/stm32/Core/Src/config.cpp
+CMakeFiles/stm32.elf.dir/Core/Src/config.c.obj: CMakeFiles/stm32.elf.dir/flags.make
+CMakeFiles/stm32.elf.dir/Core/Src/config.c.obj: ../Core/Src/config.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dawidd/projects/studia/mmms_sorter/stm32/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/stm32.elf.dir/Core/Src/config.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/stm32.elf.dir/Core/Src/config.c.obj -c /home/dawidd/projects/studia/mmms_sorter/stm32/Core/Src/config.c
 
-CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dawidd/projects/studia/mmms_sorter/stm32/Core/Src/config.cpp > CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.i
+CMakeFiles/stm32.elf.dir/Core/Src/config.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/stm32.elf.dir/Core/Src/config.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dawidd/projects/studia/mmms_sorter/stm32/Core/Src/config.c > CMakeFiles/stm32.elf.dir/Core/Src/config.c.i
 
-CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dawidd/projects/studia/mmms_sorter/stm32/Core/Src/config.cpp -o CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.s
+CMakeFiles/stm32.elf.dir/Core/Src/config.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/stm32.elf.dir/Core/Src/config.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dawidd/projects/studia/mmms_sorter/stm32/Core/Src/config.c -o CMakeFiles/stm32.elf.dir/Core/Src/config.c.s
 
 CMakeFiles/stm32.elf.dir/Core/Src/main.c.obj: CMakeFiles/stm32.elf.dir/flags.make
 CMakeFiles/stm32.elf.dir/Core/Src/main.c.obj: ../Core/Src/main.c
@@ -354,7 +354,7 @@ CMakeFiles/stm32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
 
 # Object files for target stm32.elf
 stm32_elf_OBJECTS = \
-"CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.obj" \
+"CMakeFiles/stm32.elf.dir/Core/Src/config.c.obj" \
 "CMakeFiles/stm32.elf.dir/Core/Src/main.c.obj" \
 "CMakeFiles/stm32.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj" \
 "CMakeFiles/stm32.elf.dir/Core/Src/stm32f1xx_it.c.obj" \
@@ -380,7 +380,7 @@ stm32_elf_OBJECTS = \
 # External object files for target stm32.elf
 stm32_elf_EXTERNAL_OBJECTS =
 
-stm32.elf: CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.obj
+stm32.elf: CMakeFiles/stm32.elf.dir/Core/Src/config.c.obj
 stm32.elf: CMakeFiles/stm32.elf.dir/Core/Src/main.c.obj
 stm32.elf: CMakeFiles/stm32.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
 stm32.elf: CMakeFiles/stm32.elf.dir/Core/Src/stm32f1xx_it.c.obj
@@ -404,7 +404,7 @@ stm32.elf: CMakeFiles/stm32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_h
 stm32.elf: CMakeFiles/stm32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
 stm32.elf: CMakeFiles/stm32.elf.dir/build.make
 stm32.elf: CMakeFiles/stm32.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dawidd/projects/studia/mmms_sorter/stm32/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable stm32.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dawidd/projects/studia/mmms_sorter/stm32/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking C executable stm32.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stm32.elf.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/dawidd/projects/studia/mmms_sorter/stm32/cmake-build-debug/stm32.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/dawidd/projects/studia/mmms_sorter/stm32/cmake-build-debug/stm32.bin"

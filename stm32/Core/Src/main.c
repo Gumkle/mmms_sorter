@@ -1,24 +1,43 @@
 #include "main.h"
 
-
+#define TRIES_UNTIL_STOP 100
+#define MSEC 1
+#define SEC 1000
 
 int main(void)
 {
   HAL_Init();
   SystemClock_Config();
-
   MX_GPIO_Init();
   MX_I2C1_Init();
-
   GPIO_config();
 
   while (1)
   {
-      HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
-      HAL_Delay(100);
-      HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
-      HAL_Delay(1000);
+      listenForSignal();
+      unsigned short i = 0;
+//      while (i++ <= TRIES_UNTIL_STOP && machineStarted) {
+//        getNextMmms();
+//        scan();
+//        if(isMmmsPresentInChamber()) {
+//            i = 0;
+//            directTo(currentMmmsColor());
+//            openLatch();
+//            waitFor(100 * MSEC);
+//            closeLatch();
+//        }
+//      }
+//      stopMachine();
   }
+}
+
+void listenForSignal() {
+    int value = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_9);
+    if(value) {
+        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
+    } else {
+        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+    }
 }
 
 

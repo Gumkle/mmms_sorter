@@ -129,29 +129,29 @@ stm32.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32.elf.dir/build.make CMakeFiles/stm32.elf.dir/build
 .PHONY : stm32.elf/fast
 
-Core/Src/config.obj: Core/Src/config.cpp.obj
+Core/Src/config.obj: Core/Src/config.c.obj
 .PHONY : Core/Src/config.obj
 
 # target to build an object file
-Core/Src/config.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32.elf.dir/build.make CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.obj
-.PHONY : Core/Src/config.cpp.obj
+Core/Src/config.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32.elf.dir/build.make CMakeFiles/stm32.elf.dir/Core/Src/config.c.obj
+.PHONY : Core/Src/config.c.obj
 
-Core/Src/config.i: Core/Src/config.cpp.i
+Core/Src/config.i: Core/Src/config.c.i
 .PHONY : Core/Src/config.i
 
 # target to preprocess a source file
-Core/Src/config.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32.elf.dir/build.make CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.i
-.PHONY : Core/Src/config.cpp.i
+Core/Src/config.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32.elf.dir/build.make CMakeFiles/stm32.elf.dir/Core/Src/config.c.i
+.PHONY : Core/Src/config.c.i
 
-Core/Src/config.s: Core/Src/config.cpp.s
+Core/Src/config.s: Core/Src/config.c.s
 .PHONY : Core/Src/config.s
 
 # target to generate assembly for a file
-Core/Src/config.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32.elf.dir/build.make CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.s
-.PHONY : Core/Src/config.cpp.s
+Core/Src/config.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stm32.elf.dir/build.make CMakeFiles/stm32.elf.dir/Core/Src/config.c.s
+.PHONY : Core/Src/config.c.s
 
 Core/Src/main.obj: Core/Src/main.c.obj
 .PHONY : Core/Src/main.obj

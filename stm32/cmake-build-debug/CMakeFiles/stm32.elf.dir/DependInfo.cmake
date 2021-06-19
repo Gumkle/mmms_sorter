@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 set(CMAKE_DEPENDS_LANGUAGES
   "ASM"
   "C"
-  "CXX"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
@@ -30,6 +29,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Drivers/CMSIS/Include"
   )
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/dawidd/projects/studia/mmms_sorter/stm32/Core/Src/config.c" "/home/dawidd/projects/studia/mmms_sorter/stm32/cmake-build-debug/CMakeFiles/stm32.elf.dir/Core/Src/config.c.obj"
   "/home/dawidd/projects/studia/mmms_sorter/stm32/Core/Src/main.c" "/home/dawidd/projects/studia/mmms_sorter/stm32/cmake-build-debug/CMakeFiles/stm32.elf.dir/Core/Src/main.c.obj"
   "/home/dawidd/projects/studia/mmms_sorter/stm32/Core/Src/stm32f1xx_hal_msp.c" "/home/dawidd/projects/studia/mmms_sorter/stm32/cmake-build-debug/CMakeFiles/stm32.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
   "/home/dawidd/projects/studia/mmms_sorter/stm32/Core/Src/stm32f1xx_it.c" "/home/dawidd/projects/studia/mmms_sorter/stm32/cmake-build-debug/CMakeFiles/stm32.elf.dir/Core/Src/stm32f1xx_it.c.obj"
@@ -62,26 +62,6 @@ set(CMAKE_TARGET_DEFINITIONS_C
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../Core/Inc"
-  "../Drivers/STM32F1xx_HAL_Driver/Inc"
-  "../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
-  "../Drivers/CMSIS/Device/ST/STM32F1xx/Include"
-  "../Drivers/CMSIS/Include"
-  )
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dawidd/projects/studia/mmms_sorter/stm32/Core/Src/config.cpp" "/home/dawidd/projects/studia/mmms_sorter/stm32/cmake-build-debug/CMakeFiles/stm32.elf.dir/Core/Src/config.cpp.obj"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "DEBUG"
-  "STM32F103xB"
-  "USE_HAL_DRIVER"
-  )
-
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Core/Inc"
   "../Drivers/STM32F1xx_HAL_Driver/Inc"
   "../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"

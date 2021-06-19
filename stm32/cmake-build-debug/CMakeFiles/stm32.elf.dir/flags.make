@@ -3,7 +3,6 @@
 
 # compile ASM with /usr/bin/arm-none-eabi-gcc
 # compile C with /usr/bin/arm-none-eabi-gcc
-# compile CXX with /usr/bin/arm-none-eabi-g++
 ASM_DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
 
 ASM_INCLUDES = -I/home/dawidd/projects/studia/mmms_sorter/stm32/Core/Inc -I/home/dawidd/projects/studia/mmms_sorter/stm32/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/dawidd/projects/studia/mmms_sorter/stm32/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/dawidd/projects/studia/mmms_sorter/stm32/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/dawidd/projects/studia/mmms_sorter/stm32/Drivers/CMSIS/Include
@@ -15,10 +14,4 @@ C_DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
 C_INCLUDES = -I/home/dawidd/projects/studia/mmms_sorter/stm32/Core/Inc -I/home/dawidd/projects/studia/mmms_sorter/stm32/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/dawidd/projects/studia/mmms_sorter/stm32/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/dawidd/projects/studia/mmms_sorter/stm32/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/dawidd/projects/studia/mmms_sorter/stm32/Drivers/CMSIS/Include
 
 C_FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-
-CXX_DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
-
-CXX_INCLUDES = -I/home/dawidd/projects/studia/mmms_sorter/stm32/Core/Inc -I/home/dawidd/projects/studia/mmms_sorter/stm32/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/dawidd/projects/studia/mmms_sorter/stm32/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/dawidd/projects/studia/mmms_sorter/stm32/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/dawidd/projects/studia/mmms_sorter/stm32/Drivers/CMSIS/Include
-
-CXX_FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu++17
 

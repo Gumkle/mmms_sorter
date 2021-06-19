@@ -32,7 +32,7 @@ extern "C" {
 #include "config.h"
 
 /* USER CODE BEGIN EFP */
-
+void listenForSignal();
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/

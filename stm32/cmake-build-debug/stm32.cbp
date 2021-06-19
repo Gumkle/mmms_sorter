@@ -108,7 +108,7 @@
 		<Unit filename="/home/dawidd/projects/studia/mmms_sorter/stm32/Core/Inc/stm32f1xx_it.h">
 			<Option target="stm32.elf"/>
 		</Unit>
-		<Unit filename="/home/dawidd/projects/studia/mmms_sorter/stm32/Core/Src/config.cpp">
+		<Unit filename="/home/dawidd/projects/studia/mmms_sorter/stm32/Core/Src/config.c">
 			<Option target="stm32.elf"/>
 		</Unit>
 		<Unit filename="/home/dawidd/projects/studia/mmms_sorter/stm32/Core/Src/main.c">
